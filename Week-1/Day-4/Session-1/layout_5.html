@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout-5 Grid Area</title>
+        <style>
+            .main-grid{
+                display:grid;
+                grid-template-columns:200px 600px;
+                grid-template-rows:70px 500px;
+                grid-gap:30px;
+                margin:45px 250px
+            }
+            .block1{
+                background:red;
+                grid-column-start:span 2;}
+                
+            .block2{
+                background:rgb(104, 248, 67)}
+            .block3{
+                background:rgb(46, 139, 116);}
+        </style>
+    </head>
+    <body>
+        <div class="main-grid">
+            <div class="block1"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+        </div>
+    </body>
+</html>
