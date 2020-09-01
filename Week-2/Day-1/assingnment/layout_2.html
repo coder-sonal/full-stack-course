@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout-2 CSS</title>
+        <style>
+            .container{
+                margin:100px 350px;
+                display: grid;
+                grid-template-columns: 140px 140px 140px 140px;
+                grid-template-rows: 140px 140px 140px;
+                grid-gap:30px;
+            }
+            .small-block{
+                background: rgb(27, 136, 118);
+                height: 140px;
+                width: 140px;
+            }
+            .big-block{
+                grid-column:span 2;
+                width: 310px;
+            }
+           
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="small-block"></div>
+            <div class="small-block big-block"></div>
+            <div class="small-block"></div>
+            <div class="small-block big-block"></div>
+            <div class="small-block"></div>
+            <div class="small-block"></div>
+            <div class="small-block"></div>
+            <div class="small-block"></div>
+            <div class="small-block big-block"></div>
+            
+        </div>
+    </body>
+</html>
