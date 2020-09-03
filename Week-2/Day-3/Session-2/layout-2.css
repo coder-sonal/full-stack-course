@@ -1,0 +1,50 @@
+.cant{
+    display: flex;
+    flex-wrap: wrap;
+    margin:80px 350px 80px 330px
+}
+.cant div{
+    background-color: rgb(19, 129, 105);
+    height: 120px;
+    margin:15px
+}
+#box div{
+    flex-basis: 140px;
+
+}
+.grow{
+    flex-grow:6;
+}
+@media (max-width:1000px){
+    .cant{
+        flex-direction: column
+    }
+    .cant div{
+        background-color:red
+    }
+}
+@media (min-width:1000px){
+    .cant{
+        display:initial
+    }
+    .cant div{
+        background-color:blue}
+}
+@media (min-width:1300px){
+    .cant{
+        display: flex;
+        flex-wrap: wrap;
+        margin:80px 350px 80px 330px
+    }
+    .cant div{
+        background-color: rgb(19, 129, 105);
+        height: 120px;
+        margin:15px
+    }
+    #box div{
+        flex-basis: 140px;
+    
+    }
+    .grow{
+        flex-grow:6;  }
+}
