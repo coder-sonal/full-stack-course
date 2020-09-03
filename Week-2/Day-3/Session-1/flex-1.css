@@ -1,0 +1,14 @@
+.cant{
+    display: flex;
+    margin:50px 350px;
+     
+}
+.cant div{
+    background-color: rgb(27, 117, 102);
+    margin:15px;
+    height:400px ;
+    padding:40px
+}
+#block div{
+    flex-basis:2.5em
+}

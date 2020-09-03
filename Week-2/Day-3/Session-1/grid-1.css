@@ -1,0 +1,10 @@
+.cont{
+    display:grid;
+    margin:100px 300px;
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 130px 130px 130px 130px 130px;
+    grid-gap:20px
+}
+.cont div{
+    background-color: rgb(24, 133, 127);
+}

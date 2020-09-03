@@ -1,0 +1,17 @@
+.cant{
+    display: flex;
+    flex-wrap: wrap;
+    margin:80px 350px 80px 330px
+}
+.cant div{
+    background-color: rgb(19, 129, 105);
+    height: 120px;
+    margin:15px
+}
+#box div{
+    flex-basis: 140px;
+
+}
+.grow{
+    flex-grow:6;
+}

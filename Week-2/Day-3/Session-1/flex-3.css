@@ -1,0 +1,16 @@
+.BBox{
+    display: flex;
+    margin:30px 300px;
+    flex-wrap: wrap;
+}
+.BBox div{
+    background-color: rgb(17, 110, 102);
+    height:120px;
+    margin:15px;
+}
+#box div{
+    flex-basis: 130px;
+}
+.visible{
+    visibility: hidden;
+}
