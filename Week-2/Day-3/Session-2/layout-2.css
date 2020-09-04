@@ -1,7 +1,8 @@
 .cant{
     display: flex;
     flex-wrap: wrap;
-    margin:80px 350px 80px 330px
+    margin:80px 350px;
+    background-color: chartreuse;
 }
 .cant div{
     background-color: rgb(19, 129, 105);
@@ -34,15 +35,17 @@
     .cant{
         display: flex;
         flex-wrap: wrap;
-        margin:80px 350px 80px 330px
+        margin:80px 350px;
+        height: 600px;
+        width: 900px;
     }
     .cant div{
         background-color: rgb(19, 129, 105);
-        height: 120px;
+        height: 160px;
         margin:15px
     }
     #box div{
-        flex-basis: 140px;
+        flex-basis: 200px;
     
     }
     .grow{
