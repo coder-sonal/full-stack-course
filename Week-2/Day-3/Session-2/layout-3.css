@@ -1,0 +1,30 @@
+.BBox{
+    margin:30px 300px;
+    flex-wrap: wrap;
+    height:640px;
+    width: 640px;
+    display: flex;
+}
+.BBox1{
+    height:95%;
+    width:21%;
+    margin:10px;
+}
+.BBox1 div{
+    height: 130px;
+    width: 130px;
+    background-color: blue;
+    margin:20px;
+}
+.visible{
+    visibility: hidden;
+}
+@media (max-width:1000px){
+    .BBox{
+        display: initial;
+    }
+    .BBox1 div{
+        background-color: rebeccapurple;
+        margin-left:400px
+    }
+}
