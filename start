@@ -1,1 +1,29 @@
 Mon Aug 24 21:05:55 IST 2020
+var season = "April"
+switch (season){
+  case "February":
+  case "March":
+     season = "Spring";
+    break;
+  case "April":
+  case "May":
+  case "June":
+    season = "Summer";
+    break;
+  case "July":
+  case "August":
+  case "September":
+    season = "Monsoon";
+    break;
+  case "October": 
+  case "Noveber":
+    season = "Autumn";
+    break;
+  case "December":
+  case "January":
+   season:"Winter";
+   break;
+  default:
+    season = "Invalid month";
+}
+console.log(season)
