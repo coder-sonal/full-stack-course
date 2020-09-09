@@ -17,7 +17,7 @@ else if (totalincome > 1000000 && saving*0.1 > 50000)
 else if (totalincome < 1000000 && saving*0.1 < 50000)
     taxableamount = totalincome - (saving*0.3);
 
-console.log(taxableamount);
+console.log("TaxableAmount" + " " + "=" +taxableamount);
 
 if(taxableamount <= 250000) {
     console.log("Total income below 2.5 lakhs")
@@ -40,5 +40,5 @@ else {
     }
 }
 
-console.log(nettax);
+console.log("TaxAmount" + " " + "=" +nettax);
 
