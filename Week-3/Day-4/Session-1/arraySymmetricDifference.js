@@ -46,5 +46,4 @@ function diffrenceArray2(array){
           }  
     }
     console.log("YmitricDifference of Array", arrayFirst, "and",arraySecond, "is", arrayDifference);
-    
 }
