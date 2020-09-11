@@ -21,7 +21,7 @@ function superSetArray(firstArray){
          
     }
     if (matchCount == arraySecond.length){
-        console.log(arrayFirst, "SupetSet of" , arraySecond)
+        console.log(arrayFirst, "SuperSet of" , arraySecond)
     }
     else{
         console.log("Try another array")}
