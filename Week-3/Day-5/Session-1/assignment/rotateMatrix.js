@@ -8,7 +8,7 @@ var size = matrixFun.length-1;
 rotateMatrix(matrixFun);
 
 function rotateMatrix(clockwiseMatrix){
-    // console.log(clockwiseMatrix)
+
     var rotatedMatrix = [[],
                         [],
                         []];
