@@ -5,8 +5,6 @@ var student = [{name : "Aman", marks : 70},
 
 
 var finalResult = student.map(function(result){
-    var studentResult = {};
-    studentResult = result;
     if (result.marks >= 90){
         result.grade = 'A';
     }
@@ -22,6 +20,6 @@ var finalResult = student.map(function(result){
     else if (result.marks < 40){
         result.grade = 'F';
     }
-    return (studentResult);
+    return (result);
 })
 console.log(finalResult);
