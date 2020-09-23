@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Driving Eligibilty</title>
+    </head>
+    <body>
+        <input type="number" id="age">
+        <p id="drive"></p>
+        <button onclick="checkEligibilty()">Age</button>
+        <script>
+            function checkEligibilty(){
+                if (document.getElementById("age").value > 18){
+                    document.getElementById("drive").innerHTML = "You can drive in India!";
+                }else if(document.getElementById("age").value < 18){
+                    document.getElementById("drive").innerHTML = "You can't drive in India in the p tag.";
+                }else{
+                    document.getElementById("drive").innerHTML = "You are just old enough to drive in India!";
+                }
+            }
+        </script>
+    </body>
+</html>
