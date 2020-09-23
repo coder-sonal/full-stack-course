@@ -12,17 +12,73 @@
     </head>
     <body>
         <input type="number" id="age">
+        <input type="text" id="color">
+        <select id="country">
+            <option>--</option>
+            <option>India</option>;
+            <option>United States of America</option>;
+            <option>China</option>;
+            <option>Nepal</option>;
+            <option>Australia</option>;
+            <option>France</option>;
+            <option>Germany</option>;
+            <option>South Africa</option>;
+            <option>Nigeria</option>;
+            <option>Mexico</option>;
+            <option>Canada</option>;
+            <option>Argentina</option>;
+            <option>Brazil</option>;
+            <option>Singapore</option>;
+            <option>Sweden</option>;
+
+        </select>
         <p id="drive"></p>
-        <button onclick="checkEligibilty()">Age</button>
+        <button id="click" onclick=checkEligibilty()>Age</button>
+        <button onclick=checkContinent()>Find continent</button>
         <script>
             function checkEligibilty(){
                 if (document.getElementById("age").value > 18){
                     document.getElementById("drive").innerHTML = "You can drive in India!";
                 }else if(document.getElementById("age").value < 18){
-                    document.getElementById("drive").innerHTML = "You can't drive in India in the p tag.";
+                    document.getElementById("drive").innerHTML = "You can't drive in India.";
                 }else{
                     document.getElementById("drive").innerHTML = "You are just old enough to drive in India!";
                 }
+                document.getElementById("click").style.background = document.getElementById("color").value;
+            }
+            function checkContinent(){
+                var x  = document.getElementById("country").value;
+                switch (x){
+                    case "India":
+                    case "China":
+                    case "Nepal": 
+                    case "Singapore":
+                        alert("The continent is Asia");
+                        break;
+                    case "United States of America":
+                    case "Mexico":
+                    case "Canada":
+                        alert("The continent is North America");  
+                        break;
+                    case "Australia":
+                        alert("The continent is Australia");
+                        break;
+                    case  "France":
+                    case  "Argentina":
+                    case "Brazil":
+                        alert("The continent is South America");
+                        break;
+                    case "Germany":
+                    case "Sweden":
+                        alert("The continent is North Europe");
+                        break;
+                    case "Africa":
+                    case "Nigeria":
+                        alert("The continent is South Africa");
+                        break;
+                    default :
+                        alert("Enter Country Name");
+                    }
             }
         </script>
     </body>
