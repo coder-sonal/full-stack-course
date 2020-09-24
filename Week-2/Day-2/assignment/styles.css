@@ -1,0 +1,247 @@
+body{
+    background:black
+}
+.rowdiv1{
+    height:50px;
+    width: 90%;
+    background-color: rgb(24, 25, 31);
+    margin-left:60px;
+    display: inline-flex;
+}
+.topbar{
+    color:white;
+    margin:-15px 150px;
+}
+.row1div2{
+    display: inline-flex
+}
+.search{
+    background-color:rgb(44, 44, 44);
+    height: 20px;
+    width: 200px;
+    margin-top:8px;
+    text-align:left;
+    padding: 8px;
+    color:white
+}
+.signup{
+    height: 15px;
+    width: 50px;
+    margin-top:8px;
+    text-align:left;
+    padding: 8px;
+    color:white10
+    border=1px solid white;
+    margin-left: 20px;
+}
+.signin{
+    color:white;
+    margin-left:10px
+}
+.rowdiv2{
+    background-color:rgb(34, 40, 49);
+    height:400px;
+    width: 90%;
+    margin-left:60px;
+    display: inline-flex;
+}
+.row2block1{
+    margin:30px 300px;
+    margin-right:50px
+}
+.built{
+    font-size:50px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:-5px;
+}
+.github{
+    font-size:15px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.login{
+    background-color: white;
+    width:270px;
+    height:320px;
+    border:1px solid white;
+    margin-top:40px
+}
+.user{
+    border:.5px solid rgb(216, 216, 216);
+    height:30px;
+    width:240px;
+    margin-left:10px;
+}
+.p1{
+    margin-left:8px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px
+}
+.inst{
+    font-size:9px;
+    margin-left:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sinup{
+    height:15px;
+    width:222px;
+    background-color: rgb(16, 190, 16);
+    text-align: center;
+    padding:10px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+    margin-top:15px
+}
+.rowdiv3{
+    height: 700px;
+    width: 88.7%;
+    margin-left:60px;
+    background-color: white;
+    padding:10px
+}
+.rowdiv3block1{
+    height:200px;
+    width:60%;
+    border:.05px solid gray;
+    margin-left:20%;
+    margin-top:40px;
+    box-shadow: -20px -20px 8px #888888;
+    display: inline-flex;
+}
+.start{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:35px 20px;
+    font-size:20px
+}
+.p2{
+    color:gray;
+    font-size:15px;
+    margin-top:-20px;
+}
+.div3b2{
+    text-align: center;
+    margin-top: 40px;
+}
+.p3{
+    font-size:13px;
+    font-weight: 800;
+}
+.box{
+    border:.5px solid rgb(111, 111, 228);
+    height:15px;
+    width: 100px;
+    font-size:12px;
+    padding:10px;
+    background-color: blue;
+    color:white
+}
+.contact{
+    background-color:initial;
+    color:rgb(111, 111, 228)
+}
+.rowdiv3block2{
+    height:170px;
+    width:60%;
+    border:1px solid gray;
+    margin-left:20%;
+    margin-top:60px;
+    background-image: url("https://img.freepik.com/free-vector/black-dark-3d-low-poly-geometric-background_79145-393.jpg?size=626&ext=jpg&ga=GA1.2.63763983.1595462400");
+    display: inline-flex;
+}
+.RD3div1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px 20px;
+    font-size:20px;
+    font-weight:800;
+    color:white;
+}
+.RD3div2{
+    border:.5px solid rgb(30, 83, 114);
+    height:15px;
+    width: 100px;
+    font-size:12px;
+    padding:10px;
+    background-color: rgb(30, 83, 114);
+    color:white;
+    margin:65px 80px
+}
+.rowdiv3block3{
+    height:170px;
+    width:60%;
+    margin-left:20%;
+    margin-top:40px;
+    text-align: center;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray
+}
+.rowdiv4{
+    height: 170px;
+    width: 90%;
+    margin-left:60px;
+    background-color: white;
+    text-align: center;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray
+    
+}
+.div4p1{
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+    margin-top:-5px
+}
+.rowdiv5{
+    height: 450px;
+    width: 90%;
+    margin-left:60px;
+    background-color: white;
+    display:inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    font-size:20px
+}
+.robot{
+    height:250px;
+    width:300px;
+    margin-left:300px;
+}
+.rowdiv6{
+    height: 170px;
+    width: 90%;
+    margin-left:60px;
+    background-color: white;
+}
+.flex{
+    display:flex;
+    width: 20%;
+    height:90px;
+    margin:20px;
+}
+.image{
+    border:1px solid black;
+    margin:20px
+}
+.rowdiv div{
+    height: 200px;
+    padding:100px
+}
+.footer1{
+    background-color:rgb(34, 40, 49);
+    height:300px;
+    width: 90%;
+    margin-left:60px;
+    display: inline-flex;
+}
+.lastdiv{
+    background-color:white;
+    height:300px;
+    width: 90%;
+    margin-left:60px;
+    display: inline-flex;
+}
