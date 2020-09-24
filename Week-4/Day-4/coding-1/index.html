@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Session 1!</title>
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+</head>
+<body>
+	<!-- These elements below are for FSD.JS.9.1-->
+	<h1> Create your own exponentiation function! </h1>
+	<input type="text" name = "num1" id="n1">
+	<input type="text" name = "num2" id="n2"> 
+	<p id="exp"> </p>
+	</hr>
+	<button onclick= exponent()>Click here to find the exponent!</button>
+	<!-- These elements above are for FSD.JS.9.1-->
+
+	<!-- These elements below are for FSD.JS.9.2-->
+	<h1>Sum of multiples of 3 and 5!</h1>
+	<p id="sum"></p>
+	<input type="number" id="limit" >
+	<button onclick="sumOf3And5()">Click here for the output!</button>
+	
+	<!-- These elements above are for FSD.JS.9.2-->
+
+	<!-- These elements below are for FSD.JS.9.3-->
+	<h1>Check if the users email is valid!</h1>
+	<label for="Email">Email</label>
+	<input type="text" id="email">
+	<button onclick="validateEmail()">Check Email!</button>
+	<!-- These elements above are for FSD.JS.9.3-->
+	<script type="text/javascript">
+		//Write javascript for FSD.JS.9.1 here
+		function exponent(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2 = parseInt(document.getElementById("n2").value);
+            var exponentValue = 1;
+            for (var i=0; i<=n2-1; i++){
+                exponentValue = exponentValue * n1;
+            }
+         document.getElementById('exp').innerHTML = exponentValue	
+		}
+		//Write javascript for FSD.JS.9.2 here
+		function sumOf3And5(){  
+            var l = document.getElementById("limit").value;
+            var sum = 0;
+            for (var i=0; i<=l; i++){
+                if(i%3 === 0 && i%5 === 0){
+                    var sum = sum + i;
+                   
+                }
+            }
+            document.getElementById("sum").innerHTML = sum;
+		}
+		//Write javascript for FSD.JS.9.3 here
+		function validateEmail(){
+			var email = document.getElementById("email").value;
+			var emailValidity = false;
+			for (var i=0; i<=email.length-1; i++){
+				if (email[0] === '@' && email[0] === "."){
+					emailValidity = false;
+				}
+				if (email[i] === '@' && i !== 0 ){
+					emailValidity = true;
+				}
+				if (email[i] === '@' && email[i+1] === "." || email[i-1] === "."){
+					emailValidity = false;
+				}
+				if(email[i] === "." && email[i+1] === "."){
+					emailValidity = false;
+				}
+				if(email[email.length-1] !== "m"){
+					emailValidity = false;
+				}
+			}
+			if (emailValidity){
+				alert("Valid Email")
+			}
+			if (!emailValidity){
+				alert("Invalid Email");
+			}
+		}
+	</script>
+</body>
+</html>
