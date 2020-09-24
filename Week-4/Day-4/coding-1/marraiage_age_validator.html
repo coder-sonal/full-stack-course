@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marriage Age Validator</title>
+        <script type="text/javascript" src="validator.js"></script>
+        <style>
+            div{
+                margin: 30px;
+            }
+            #gender{
+                margin:20px 50px 0px 0px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <label>GENDER</label>
+            <select id="gender">
+                <option>--</option>
+                <option value="Female">F</option>
+                <option value="Male">M</option>
+            </select>
+            <lable>YOB</lable>
+            <input type="number" id="yob">
+        </div>
+        <div>
+            <button onclick=calculateAge()><h4>Marriage Age Validator</h4></button>
+        </div>
+    </body>
+</html>
