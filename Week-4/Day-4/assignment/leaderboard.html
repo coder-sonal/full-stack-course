@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Score Board</title>
+        <link rel="stylesheet" type="text/css" href="./leaderboard.css">
+        <script type="text/javascript" src = "leaderboard.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="minmax">
+                <div id="min">24</div>
+                <div id="max">100</div>
+            </div>
+            <div class="lable1">
+                <lable class="minValue">MIN</lable>
+                <lable class="maxValue">MAX</lable>
+            </div>
+            <div>
+                <lable class="lable">Score</lable>
+                <div id="score"></div>
+            </div>
+            <div id="num">
+                <button id="one" onclick="num(1)">1</button>
+                <button id="two" onclick="num(2)">2</button>
+                <button id="three" onclick="num(3)">3</button>
+                <button id="four" onclick="num(4)">4</button>
+                <button id="five" onclick="num(5)">5</button>
+                <button id="six" onclick="num(6)">6</button>
+                <button id="seven" onclick="num(7)">7</button>
+                <button id="eight" onclick="num(8)">8</button>
+                <button id="nine" onclick="num(9)">9</button>
+                <button class="clear" onclick="clearAll()">Clear</button>
+                <button id="zero" onclick="num(0)">0</button>
+                <button id="remove" onclick="del()"><</button>
+            </div>  
+            <div>
+                <div>
+                    <button id="enter" onclick="check()">Enter</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

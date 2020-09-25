@@ -1,0 +1,86 @@
+#main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 30px 150px 330px 100px;
+    margin-left:400px;
+    margin-right:400px;
+}
+#minmax{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 200px;
+    grid-template-rows:40px;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 100;
+    text-align: center;
+}
+.lable1{
+    display: inline;
+    /* text-align: center; */
+}
+.minValue,.maxValue{
+    margin-left: 150px;
+    font-size: 25px;
+}
+#min,#max{
+    border: 2px solid black;
+    margin-left: 50px;
+    padding:20px 30px 50px
+}
+#min{
+    background-color: red;
+}
+#max{
+    background-color: green;
+}
+#score{
+    height:1em;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: 140px;
+    background-color:rgb(192, 189, 189);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 25px;
+}
+.lable{
+    text-align:center;
+    font-size: 30px;
+    margin-left: 230px;
+}
+#num{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+}
+#enter{
+    margin:0px 150px;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size:25px
+}
+#num>button{
+    height: 60px;
+    width: 60px;
+    border:2px solid black;
+    margin-left:160px;
+    font-size: large; 
+    cursor: pointer;  
+}
+.blank{
+    visibility: hidden;
+}
+#one,#three,#seven,#nine{
+    background-color: green;
+}
+#two,#four,#five,#six,#eight,#remove,.clear{
+    background-color: orange;
+}
+#zero{
+    background-color: purple;
+}
