@@ -67,3 +67,14 @@ body{
     border: initial;
     color: red;
 }
+@media only screen and (max-width:1150px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #left,#right{
+        margin-left: 20%;
+        width: 60%;
+    }
+}
