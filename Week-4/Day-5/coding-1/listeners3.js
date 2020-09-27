@@ -6,7 +6,6 @@ function rdm(no){
     return Math.floor (Math.random()*no);
 }
 function bgColor(){
-    debugger;
     if (count < 2){
         var randomColor = 'rgb('+ rdm(255)+","+rdm(255)+","+rdm(255)+')';
         document.body.style.backgroundColor = randomColor;
