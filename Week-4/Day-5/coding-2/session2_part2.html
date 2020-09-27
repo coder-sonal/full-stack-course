@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Listner</title>
+        <link rel="stylesheet" type="text/css" href="./session2_part2.css">
+    </head>
+    <body>
+        <div id="container">
+            <button id="submit">Submit</button>
+        </div>
+        <script type="text/javascript">
+            var cont = document.getElementById("container");
+            cont.addEventListener('mousemove' ,changeColor);
+            cont.addEventListener('mouseout',deflt)
+            function changeColor(event){
+                document.getElementById("submit").style.backgroundColor ="red";
+            }
+            function deflt(event){
+                document.getElementById("submit").style.backgroundColor ="green";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+div{
+    height: 400px;
+    width: 550px;
+    border-radius: 20px;
+    background-color: blue;
+    margin: 10% 25%;
+    cursor: pointer;
+}
+button{
+    background-color:green;
+    border-radius: 10px;
+    height: 60px;
+    width: 150px;
+    margin: 300px 20px 20px 350px;
+    cursor: pointer;
+}
