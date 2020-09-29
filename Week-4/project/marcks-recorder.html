@@ -2,38 +2,53 @@
 <html>
     <head>
         <title>MARKS RECORDER</title>
-        <link rel="stylesheet" type="text/css" href="./marcks-recorder.css">
+        <link rel="stylesheet" type="text/css" href="./marcks-recorder.css">;
     </head>
-    <body><h1>STUDENT MARKS RECORDER</h1>
+    <body><h1>STUDENT PERFORMANCE RECORDER</h1>
         <div id="filter">Filter
-            <select>
+            <select id="select" onchange="create(this)">
                 <option>--</option>
-                <option>Name</option>
-                <option>Grade</option>
-                <option>Section</option>
-                <option>Exam Type</option>
-                <option>Subject</option>
+                <option value="name">Name</option>
+                <option value="grade">Grade</option>
+                <option value="section">Section</option>
+                <option value="exam">Exam Type</option>
+                <option value="subject">Subject</option>
+                <option value="avg">Average</option>
+                <option value="min">Minimum</option>
+                <option value="max">Maximum</option>
             </select>
+            <input>
+            <button>Search</button>
+            <p>NEW STUDENT RECORD</p>
         </div>
         <div id="container">
-            <div><label>STUDENT NAME</label></div>
-            <div>:</div>
-            <div><input type="text" id="name"></div>
-            <div><label>STUDENT GRADE</label></div>
-            <div>:</div>
-            <div><input type="text" id="grade"></div>
-            <div><label>STUDENT SECTION</label></div>
-            <div>:</div>
-            <div><input type="text" id="section"></div>
-            <div><label>EXAM TYPE</label></div>
-            <div>:</div>
-            <div><input type="text" id="exam"></div>
-            <div><label>SUBJECT</label></div>
-            <div>:</div>
-            <div><input type="text" id="sub"></div>
+            <div id="form">
+                <div><label>STUDENT NAME</label></div>
+                <div>:</div>
+                <div><input type="text" id="name"></div>
+                <div><label>STUDENT GRADE</label></div>
+                <div>:</div>
+                <div><input type="text" id="grade"></div>
+                <div><label>STUDENT SECTION</label></div>
+                <div>:</div>
+                <div><input type="text" id="section"></div>
+                <div><label>EXAM TYPE</label></div>
+                <div>:</div>
+                <div><input type="text" id="exam"></div>
+                <div><label>SUBJECT</label></div>
+                <div>:</div>
+                <div><input type="text" id="sub"></div>
+                <div><label>MARKS</label></div>
+                <div>:</div>
+                <div><input type="number" id="score"></div>
+                <div id="end">
+                    <button id="submit" onclick="register()"><h2>Submit</h2></button>
+                    <!-- <button id="view" onclick="viewData()"><h2>View Students Data</h2></button> -->
+                    <!-- <button id="clear" onclick="clearData()">Clear Data</button> -->
+                </div>
+            </div>
+            <div id="img"></div>
         </div>
-        <div id="end">
-            <button id="submit"><h2>Submit</h2></button>
-        </div>
+    <script type="text/javascript" src="./marcks-recorder.js"></script>   
     </body>
 </html>
