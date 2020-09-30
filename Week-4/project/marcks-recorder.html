@@ -13,12 +13,13 @@
                 <option value="section">Section</option>
                 <option value="exam">Exam Type</option>
                 <option value="subject">Subject</option>
-                <option value="avg">Average</option>
-                <option value="min">Minimum</option>
-                <option value="max">Maximum</option>
+                <option value="totalAvg">Average</option>
+                <option value="minnn">Minimum</option>
+                <option value="maxx">Maximum</option>
             </select>
-            <input>
-            <button>Search</button>
+            <input type = "text" id = "view" value="Search By Name">
+            <button onclick ="viewData()">Search</button>
+            <button onclick="clearData()">Clear Data</button>
             <p>NEW STUDENT RECORD</p>
         </div>
         <div id="container">
@@ -43,11 +44,10 @@
                 <div><input type="number" id="score"></div>
                 <div id="end">
                     <button id="submit" onclick="register()"><h2>Submit</h2></button>
-                    <!-- <button id="view" onclick="viewData()"><h2>View Students Data</h2></button> -->
-                    <!-- <button id="clear" onclick="clearData()">Clear Data</button> -->
                 </div>
             </div>
             <div id="img"></div>
+            
         </div>
     <script type="text/javascript" src="./marcks-recorder.js"></script>   
     </body>

@@ -20,23 +20,30 @@ function register() {
 
 function create(event) {
     clearData();
+    var totalMarks = 0;
+    var studentsMarks = [];
     if(studentsData.length > 0) {
-        for(var i = 0; i < studentsData.length; i++) {
-            // document.getElementById("img").style.backgroundImage = "none";
-            var details = document.createElement("div");
+        var details = document.createElement("div");
             details.className = "details";
             details.style.width = "100%";
-            details.style.margin = "20px";
+            details.style.margin = " 20% 10%";
             details.style.color = "white";
+            
+        for(var i = 0; i < studentsData.length; i++) {
+            
+            var mks = parseInt(studentsData[i].marks);
+            totalMarks += mks;
+            studentsMarks.push(mks);
+            
             if(event.value === "name"){
                 // For Name
                 var name = document.createElement('p');
                 name.innerHTML = studentsData[i].name;
                 details.appendChild(name);
-            }else if(event.value === "grade"){
+            }else if(event.value ==="grade"){
                 // For Grade
                 var grade = document.createElement('p');
-                grade.innerHTML = studentsData[i].grade;
+                grade.innerHTML =  studentsData[i].grade;
                 details.appendChild(grade);
             }else if(event.value === "section") {
                 // For Section
@@ -53,28 +60,36 @@ function create(event) {
                 var subject = document.createElement("p");
                 subject.innerHTML = studentsData[i].subject;
                 details.appendChild(subject);
-            }else if( event.value === "avg"){
-                // For Avg
-                var average = avggg();
-                var avg = document.createElement("p");
-                avg.innerHTML = average;
-                details.appendChild(avg);
-            }else if( event.value === "min"){
-                // For Min
-                var min = document.createElement("p");
-                min.innerHTML = minnn();
-                details.appendChild(min);
             }
-            else if( event.value === "max"){
-                // For Max
-                var max = document.createElement("p");
-                max.innerHTML = maxxx();
-                details.appendChild(max);
         }
+        if (event.value === "totalAvg"){
+            var studentAvg = document.createElement("p");
+            studentAvg.innerHTML = "Average Marks optain by students in various subject "+" "+totalMarks/studentsData.length;
+            details.appendChild(studentAvg);
+        }
+        if (event.value === "minnn"){
+            studentsMarks.sort();
+            var minMark = document.createElement("p");
+            if (studentsMarks[0] < 40){
+                minMark.innerHTML = "Student failed as marks is less than passing marks"+ " "+"-"+ studentsMarks[0];
+                minMark.style.backgroundColor = "red";
+                details.appendChild(minMark);
+            }else{
+                minMark.innerHTML = studentsMarks[0];
+                details.appendChild(minMark)
+            }
+        }
+        if(event.value === "maxx"){
+            studentsMarks.sort();
+            var maxMarks = document.createElement("p");
+            maxMarks.innerHTML = "Maximum marks scored by student"+" "+studentsMarks[studentsMarks.length-1];
+            details.appendChild(maxMarks)
+        }
+
         document.getElementById("img").appendChild(details);
-        }
     }
 }
+
 
 function clearData() {
     var parent = document.getElementById("img");
@@ -83,42 +98,45 @@ function clearData() {
         parent.removeChild(datas[i]);
         i--;
     }
-    document.getElementById("img").style.backgroundImage = "url('https://images.unsplash.com/photo-1580537659466-0a9bfa916a54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')";
 }
-
-function avggg(){
-    var avg = 0;
-    var totalMarks = 0;
-    for(var i = 0; i < studentsData.length; i++){
-        
-        var  mks = parseInt(studentsData[i].marks);
-        totalMarks += mks;
-    }
-    avg = totalMarks/studentsData.length;
-    return avg;
-}
-
-function minnn(){
-    var min = 0;
-    var totalMarks = 0;
-    for(var i = 0; i < studentsData.length; i++){
-        debugger
-        var  mks = parseInt(studentsData[i].marks);
-        totalMarks += mks;
-        
-    }
-    min = totalMarks[i];
-    return min;
-}
-
-function maxxx(){
-    var max = 0;
-    var totalMarks = 0;
-    for(var i = 0; i < studentsData.length; i++){
-        
-        var  mks = parseInt(studentsData[i].marks);
-        totalMarks += mks;
-    }
-    max = totalMarks[totalMarks.length-1];
-    return max;
+function viewData(){
+    clearData();
+    if(studentsData.length > 0) {
+        var details = document.createElement("div");
+            details.className = "details";
+            details.style.width = "100%";
+            details.style.margin = " 20% 10%";
+            details.style.color = "white";
+            for(var i = 0; i < studentsData.length; i++) {
+               if( document.getElementById("view").value === studentsData[i].name){
+                    // For Name
+                    var name = document.createElement('p');
+                    name.innerHTML = studentsData[i].name;
+                    details.appendChild(name);
+                
+                    // For Grade
+                    var grade = document.createElement('p');
+                    grade.innerHTML =  studentsData[i].grade;
+                    details.appendChild(grade);
+                
+                    // For Section
+                    var section = document.createElement("p");
+                    section.innerHTML = studentsData[i].section;
+                    details.appendChild(section);
+                
+                    // For ExamType
+                    var exam = document.createElement("p");
+                    exam.innerHTML = studentsData[i].examType;
+                    details.appendChild(exam);
+                
+                    // For Subject
+                    var subject = document.createElement("p");
+                    subject.innerHTML = studentsData[i].subject;
+                    details.appendChild(subject);
+               }
+            }
+            document.getElementById("img").appendChild(details);
+            document.getElementById("view").value = "Search By Name"
+            document.getElementById("view").style.overw
+    }                 
 }
