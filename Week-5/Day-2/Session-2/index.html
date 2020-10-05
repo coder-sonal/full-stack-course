@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Available</title>
+        <link rel = "stylesheet" type = "text/css" href = "./index.css">
+       
+    </head>
+    <body><h1><u>Product Management System</u></h1>
+         <!-- SETTINGS -->
+       <div>
+        <h4>Settings</h4>
+        <form id = "settings">
+            <lable>Change Font</lable>
+            <select id="size">
+                <option>--</option>
+                <option>10</option>
+                <option>12</option>
+                <option>14</option>
+                <option>16</option>
+                <option>18</option>
+                <option>20</option>
+                <option>22</option>
+                <option>24</option>
+                <option>26</option>
+                <option>28</option>
+                <option>30</option>
+                <option>32</option>
+                <option>34</option>
+                <option>36</option>
+                <option>38</option>
+                <option>40</option>
+                <option>42</option>
+                <option>44</option>
+            </select>
+            <label>Font Color</label>
+             <select id="color">
+                 <option>--</option>
+                 <option>BLACK</option>
+                 <option>RED</option>
+                 <option>BLUE</option>
+                 <option>YELLOW</option>
+                 <option>ORANGE</option>
+                 <option>PINK</option>
+                 <option>GREEN</option>
+                 <option>MEROON</option>
+                 <option>PURPLE</option>
+                 <option>WHITE</option>
+             </select>
+             <label>Change BG Color</label>
+             <select id="bgColor">
+                 <option>--</option>
+                 <option>BLACK</option>
+                 <option>RED</option>
+                 <option>BLUE</option>
+                 <option>YELLOW</option>
+                 <option>ORANGE</option>
+                 <option>PINK</option>
+                 <option>GREEN</option>
+                 <option>DARKBLUE</option>
+                 <option>PURPLE</option>
+                 <option>WHITE</option>
+             </select>
+             <button>Change</button>   
+        </form>
+       <!-- FORM to add -->
+       <div><h1>Add Products</h1>
+            <form id = "add">
+                <lable>Product: </lable><br><input type = "text" id = "prod"><br>
+                <lable>Price: </lable><br><input type = "number" id = "price"><br>
+                <lable>Quantity: </lable><br><input type ="number" id = "qty"><br>
+                <button>Add Product</button>
+            </form>
+       </div>   
+
+       <div>
+        <table id="records"><h2>Product Details</h2>
+            <tr>    
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </table>
+       </div>
+      
+       </div>
+       <script type = "text/javascript" src = "./index.js"></script>
+    </body>
+</html>
