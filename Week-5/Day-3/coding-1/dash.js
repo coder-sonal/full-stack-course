@@ -6,4 +6,14 @@ logTime.innerHTML ="Login Time"+" "+ timeIn.getHours()+":"+timeIn.getMinutes()+"
 document.getElementById("name").innerHTML = localStorage.getItem("userId");
 
 var timeOut = document.getElementById("logOutTime");
-setTimeout(function(){window.close()},30000)
+var count = 300;
+function timeout(){
+    count--;
+    timeOut.innerHTML="Session Will Expire in"+" "+count + " seconds";
+    if(count === 0) {
+        clearInterval(timer);
+        window.history.back();
+    }
+}
+var timer = setInterval(timeout, 1000);
+
