@@ -3,7 +3,7 @@ var outTime = document.getElementById("logOutTime");
 
 var timeIn = new Date();
 logTime.innerHTML ="Login Time"+" "+ timeIn.getHours()+":"+timeIn.getMinutes()+":"+timeIn.getSeconds()
-document.getElementById("name").innerHTML = localStorage.getItem("userId");
+document.getElementById("name").innerHTML = localStorage.getItem("userID");
 
 var timeOut = document.getElementById("logOutTime");
 var count = 300;
@@ -16,4 +16,8 @@ function timeout(){
     }
 }
 var timer = setInterval(timeout, 1000);
+
+function logOut(){
+    window.history.back();
+}
 
