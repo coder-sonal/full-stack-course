@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index Back Details</title>
+        <style>
+          #showDetails{
+            white-space: pre-line;
+          }
+          #displayContainer {
+            font-size: medium;
+          }
+
+          #displayContainer p {
+            border: 1px solid dashed;
+            
+          }
+
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+<body>
+  <!-- FSD.W4.3.1_1 !-->
+  
+  <div class = "container">
+    <h1>Click the button to add a new customer!</h1>
+    <form >
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control"  id="fName" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" id="lName" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="city" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault04">Date Of Birth</label>
+            <input type = "date" class="custom-select" id="dob" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault05">Balance</label>
+            <input type="number" class="form-control" id="balance" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault05">Account Number</label>
+            <input type="number" class="form-control" id="accno" required>
+          </div>
+          <div class="col-md-7 mb-3">
+            <label for="validationDefault05">Shared Account Holder Details</label>
+            <input type="text" class="form-control" id="accHolder" required>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" id="addDetails">Add customer</button>
+      </form>
+      <h1> Click here to print all customers! <h1>
+        <button class="btn btn-primary" id="print">Print Customers</button>  
+        <p id="showDetails"></p>
+        <div id="displayContainer"></div>
+  </div>
+
+  <script type="text/javascript" src = "./index.js"> </script>
+</body>
+</html>
