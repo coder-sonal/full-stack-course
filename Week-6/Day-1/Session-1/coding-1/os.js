@@ -15,8 +15,6 @@ function printVersion(){
        var details = xhr.response;
        var codenames = JSON.parse(details).codenames;
 
-       debugger;
-
        var parent = document.getElementById('result');
        var table = document.createElement('table');
        var headingrow = document.createElement('tr');
