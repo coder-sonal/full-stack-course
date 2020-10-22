@@ -1,0 +1,15 @@
+$("#removeh1").click(function(){
+    $("#head1").remove();
+});
+$("#removeh3").click(function(){
+    $("h3").remove();
+});
+$("#removeh5").click(function(){
+    $("h5").remove();
+});
+$("#removeRed").click(function(){
+    $("#cont>.red").remove();
+});
+$("#removediv").click(function(){
+    $("#cont>div").remove();
+})
