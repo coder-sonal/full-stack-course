@@ -11,6 +11,7 @@ var state;
 
 $("#state").click(function(){
     state = document.getElementById("state").value;
+    $("#city>option").remove();
 })
 
 
