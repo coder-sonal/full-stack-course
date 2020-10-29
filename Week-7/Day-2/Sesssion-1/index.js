@@ -1,4 +1,4 @@
-let users = {};
+let users = localStorage.getItem('registrationdetails') ? JSON.parse(localStorage.getItem('registrationdetails')) : {} ;
 let count = 0;
 $("#register").click(function(e){
   $("#userDetails").empty();
