@@ -99,8 +99,16 @@ var json = [{"id":1,"first_name":"Rae","last_name":"Thyng","email":"rthyng0@nift
 {"id":99,"first_name":"Cyrill","last_name":"Slamaker","email":"cslamaker2q@google.com.hk","gender":"Male","english":23,"maths":45,"science":65},
 {"id":100,"first_name":"Celestyna","last_name":"Flecknoe","email":"cflecknoe2r@bbb.org","gender":"Female","english":37,"maths":23,"science":99}]
 
+$("#con").prepend("<p>STUDENT DETAILS</p>");
+$("p").addClass("h2");
+
 var details = document.createElement("table");
-details.setAttribute("id","studentDetails")
+details.setAttribute("id","studentDetails");
+details.style.marginTop = "40px";
+details.style.marginLeft = "20%" ;
+details.style.textAlign = "center"; 
+details.style.background = "pink"; 
+details.style.border = "2px solid red"; 
 var row = document.createElement("tr");
 row.setAttribute("id","ABCD")
 var id = document.createElement("th");
@@ -120,6 +128,8 @@ var maths = document.createElement("th");
 maths.innerHTML = "MATHS";
 var science = document.createElement("th");
 science.innerHTML = "SCIENCE";
+var total = document.createElement("th");
+total.innerHTML = "TOTAL MARKS";
 document.getElementById("con").classList.add("mt-5","container");
 row.appendChild(id);
 row.appendChild(firstname);
@@ -128,9 +138,9 @@ row.appendChild(gender);
 row.appendChild(english);
 row.appendChild(maths);
 row.appendChild(science);
+row.appendChild(total);
 details.appendChild(row);
 document.getElementById("con").appendChild(details);
-
 
 Object.values(json).forEach(function(data){
     var row = document.createElement("tr");
@@ -143,14 +153,16 @@ Object.values(json).forEach(function(data){
     lastname.innerHTML = data.last_name;
     var email = document.createElement("td");
     email.innerHTML = data.email;
-    var gender = document.createElement("th");
+    var gender = document.createElement("td");
     gender.innerHTML = data.gender;
-    var english = document.createElement("th");
+    var english = document.createElement("td");
     english.innerHTML = data.english;
-    var maths = document.createElement("th");
+    var maths = document.createElement("td");
     maths.innerHTML = data.maths;
-    var science = document.createElement("th");
+    var science = document.createElement("td");
     science.innerHTML = data.science;
+    var total = document.createElement("td");
+    total.innerHTML = data.science + data.maths + data.english;
     row.appendChild(id);
     row.appendChild(firstname);
     row.appendChild(lastname);
@@ -158,9 +170,88 @@ Object.values(json).forEach(function(data){
     row.appendChild(english);
     row.appendChild(maths);
     row.appendChild(science);
+    row.appendChild(total);
     details.appendChild(row); 
 });
-$("body").css({"background-color":"#999900","text-align":"center"})
-$("#con").prepend("<p>STUDENT DETAILS</p>");
-$("p").css({"color":"white"});
-$("p").addClass("h2");
+let count = 0;
+$("#next").click(function(){
+    count++;
+    const end = count * $("#page").val();
+    const start = end - $("#page").val();
+    var parent1 = $("#footer").parent()
+    $("#footer").empty();
+    var parent = $("#studentDetails").parent()
+    $("#studentDetails").remove();
+    if(end <= 100 && start <= 100){
+    var para = document.createElement("p");
+    para.innerHTML = start+"-"+ end;
+    }
+    var details = document.createElement("table");
+    details.setAttribute("id","studentDetails");
+    details.style.marginTop = "40px";
+    details.style.marginLeft = "25%" ;
+    details.style.textAlign = "center"; 
+    details.style.background = "pink"; 
+    details.style.border = "2px solid red"; 
+    var row = document.createElement("tr");
+    row.setAttribute("id","ABCD")
+    var id = document.createElement("th");
+    row.setAttribute("id","studenId")
+    id.innerHTML = "STUDENT ID";
+    var firstname = document.createElement("th");
+    firstname.innerHTML = "FIRST NAME";
+    var lastname = document.createElement("th");
+    lastname.innerHTML = "LAST NAME";
+    var email = document.createElement("th");
+    email.innerHTML = "STUDENT ID";
+    var gender = document.createElement("th");
+    gender.innerHTML = "GENDER";
+    var english = document.createElement("th");
+    english.innerHTML = "ENGLISH";
+    var maths = document.createElement("th");
+    maths.innerHTML = "MATHS";
+    var science = document.createElement("th");
+    science.innerHTML = "SCIENCE";
+    document.getElementById("con").classList.add("mt-5","container");
+    row.appendChild(id);
+    row.appendChild(firstname);
+    row.appendChild(lastname);
+    row.appendChild(gender);
+    row.appendChild(english);
+    row.appendChild(maths);
+    row.appendChild(science);
+    details.appendChild(row);
+    document.getElementById("footer").appendChild(para)
+    document.getElementById("con").appendChild(details);
+    for (var i = start; i < end; i++){
+        var row = document.createElement("tr");
+        row.setAttribute("id","ABCD")   
+        var id = document.createElement("td");
+        id.innerHTML = json[i].id;
+        id.style.marginLeft = "20px"
+        var firstname = document.createElement("td");
+        firstname.innerHTML = json[i].first_name;
+        firstname.style.marginLeft = "20px"
+        var lastname = document.createElement("td");
+        lastname.innerHTML = json[i].last_name;
+        lastname.style.marginLeft = "20px"
+        var email = document.createElement("td");
+        email.innerHTML = json[i].email;
+        var gender = document.createElement("td");
+        gender.innerHTML = json[i].gender;
+        var english = document.createElement("td");
+        english.innerHTML = json[i].english;
+        var maths = document.createElement("td");
+        maths.innerHTML = json[i].maths;
+        var science = document.createElement("td");
+        science.innerHTML = json[i].science;
+        row.appendChild(id);
+        row.appendChild(firstname);
+        row.appendChild(lastname);
+        row.appendChild(gender);
+        row.appendChild(english);
+        row.appendChild(maths);
+        row.appendChild(science);
+        details.appendChild(row); 
+    }
+})

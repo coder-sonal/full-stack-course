@@ -8,8 +8,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
     <body>
-        <div id="con" style="text-align: center !important;border: 1px solid black;font-weight: bolder;">
-
+        <div id="con" style="border: 1px solid black; background-color: coral;">
+            <div id="footer"></div>
+            <lable class="h4">Data Per Page</lable>
+            <select id="page" class="ml-3" style="width: 200px;height: 25px;;">
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>100</option>
+            </select>
+            <button class="pl-4 pr-4 text-danger" id="next">Next</button>
+            <lable class="h4">Sort Data</lable>
+            <select id="sort" class="ml-3" style="width: 200px;height: 25px;;">
+                <option>firstname</option>
+                <option>lastname</option>
+                <option>email</option>
+                <option>id</option>
+            </select>
+            <lable class="h4">Gender</lable>
+            <select id="gender" class="ml-3" style="width: 200px;height: 25px;;">
+                <option value="Male">m</option>
+                <option value="Female">F</option>
+            </select>
         </div>
         <script type="text/javascript" src="./index.js"></script>
     </body>
