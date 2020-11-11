@@ -31,17 +31,24 @@ $("#search").click(function(){
             userId.setAttribute("style","width:200px");
             var userUrl = document.createElement("td");
             userUrl.setAttribute("style","width:500px");
+            var repo = document.createElement("p");
+            repo.innerText="Show Repo";
+            repo.setAttribute("style","color:yellow");
+            repo.setAttribute("onclick",`showUserRepo("${data[key].repos_url}")`)
             userId.innerText = data[key].id;
             userUrl.innerText = data[key].url
             value.innerText = data[key].login;
             loginName.appendChild(value);
             loginName.appendChild(userId);
             loginName.appendChild(userUrl);
+            loginName.appendChild(repo);
             table.appendChild(loginName);
         }
     })
     .catch(err => console.log(err));
 })
-$("#repo").click(function(){
-    window.location.pathname= "/August2020/Week-7/Day-5/Session-1/coding-1/user_repo.html"
-})
+  showUserRepo = (a) => {
+    localStorage.setItem("url",a)
+    window.location.pathname = "/August2020/Week-7/Day-5/Session-1/coding-1/user_repo.html"
+  }
+
