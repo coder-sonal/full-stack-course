@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <input id="num1">
+        <input id="num2">
+        <button id="click">Add</button>
+    </div>
+    <div id = "root">
+       
+    </div>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script type ="text/babel">
+        function sum (n1,n2){ 
+            const sum = parseInt(n1)+parseInt(n2);
+            const element = (<div>
+                <h2>The Sum Of the element {sum}</h2>
+                </div>);
+            const root = document.getElementById("root");
+            ReactDOM.render(element,root);
+        }
+        document.querySelector('button').addEventListener('click', ()=>{
+            debugger
+            const n1 = document.getElementById("num1").value;
+            const n2 = document.getElementById("num2").value;
+            sum(n1,n2)
+            console.log(n1,n2)
+         });
+
+    </script>
+       
+    
+    </script>
+</body>
+</html>
