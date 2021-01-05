@@ -19,8 +19,7 @@
                     dob:"09-aug-1990",
                     favoriteColor: "Black"}
         const element = (<div>
-            <h1>My todo list</h1>
-            <p>{`${todo.join(" ")}`}</p>
+            <h1>My todo list:- {todo.join(",")}</h1>
             <p>My name is {para.name}.I am {para.age} old and was born on {para.dob}.My favorite color is {para.color}</p>
             </div>)
         ReactDOM.render(element,document.getElementById("root"));
