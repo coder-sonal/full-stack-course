@@ -19,9 +19,9 @@ class ClassComponent extends React.Component {
             four: "HTC",
         };
 
-        return(
-            <FunctionalComponent oss={os} manufacc={manufac} />
-        );
+    return(
+        <FunctionalComponent oss={os} manufacc={manufac} />
+    );
     }
 }
 
