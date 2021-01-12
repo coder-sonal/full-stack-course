@@ -31,3 +31,16 @@ img{
     color: green;
     font-weight: 600;
 }
+button{
+    height: 3em;
+    width: 10em;
+    margin-left: 50px;
+    color: white;
+    background-color: rgb(50, 81, 205);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.navbar{
+    margin: 20px;
+}
