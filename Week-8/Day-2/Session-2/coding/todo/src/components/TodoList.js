@@ -1,15 +1,22 @@
 import React from 'react';
 
+
 class TodoList extends React.Component{
-    constructor(props){
-        super(props);
-    }
+    
     render(){
-        console.log(this.props.todoList);
         return(
            <div>
-               <input type="checkbox" />
-               <label>{this.props.todoList}</label><br></br>
+               {this.props.todoList.length >= 1 && this.props.todoList.map((val,index) => {
+                   if(!val.isCompleted) {
+                    return(
+                        <div>
+                            <input type="checkbox" id={val.name}
+                            onChange={() => this.props.toggleTask(index, val.name)} />
+                            <label>{val.name}</label>
+                        </div>
+                    )
+                }
+               })}
            </div>
         )
     }

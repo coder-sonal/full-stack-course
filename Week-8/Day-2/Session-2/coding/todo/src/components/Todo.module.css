@@ -1,0 +1,22 @@
+.todo{
+    height: 300px;
+    width: 350px;
+    margin: 20px 200px;
+    border: 1px solid gray;
+    background-image: url(https://i.guim.co.uk/img/media/ca0655f25f82d21da39b64a7ddd8ca44d4893f44/0_218_5000_3000/master/5000.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e60bacbbf9128d41fa98f749188801a9);
+    background-position: center;
+}
+button{
+    margin-top: 10px;
+    height: 30px;
+    width: 50px;
+    margin-left: 5px;
+    border: none;
+    background-color: rgb(90, 136, 115);
+}
+.input1{
+    height: 28px;
+    width: 80%;
+    border: none;
+    background-color: rgb(90, 136, 115);
+}
