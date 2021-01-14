@@ -1,0 +1,23 @@
+.main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 690px;
+}
+.todoList{
+    border: 1px solid red;
+    margin:50px;
+    padding: 10px;
+    background-image:  url(https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dG93ZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.todoComplete{
+    border: 1px solid green;
+    margin: 50px;
+    padding: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDFP2Pt9W5Wllo80WgiHAe57ao_qN1kNJiBw&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
